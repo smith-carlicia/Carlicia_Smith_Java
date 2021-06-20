@@ -8,6 +8,13 @@ public class Address {
     private String state;
     private String zipcode;
 
+    private String billingStreetOne;
+    private String getBillingStreetTwo;
+    private String billingCity;
+    private String billingState;
+    private String billingZipcode;
+
+
 
     public String getStreetOne() {
         return streetOne;
@@ -47,5 +54,45 @@ public class Address {
 
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
+    }
+
+    public String getBillingStreetOne() {
+        return billingStreetOne;
+    }
+
+    public void setBillingStreetOne(String billingStreetOne) {
+        this.billingStreetOne = billingStreetOne;
+    }
+
+    public String getBillingStreetTwo() {
+        return getBillingStreetTwo;
+    }
+
+    public void setBillingStreetTwo(String getBillingStreetTwo) {
+        this.getBillingStreetTwo = getBillingStreetTwo;
+    }
+
+    public String getBillingCity() {
+        return billingCity;
+    }
+
+    public void setBillingCity(String billingCity) {
+        this.billingCity = billingCity;
+    }
+
+    public String getBillingState() {
+        return billingState;
+    }
+
+    public void setBillingState(String billingState) {
+        this.billingState = billingState;
+    }
+
+    public String getBillingZipcode() {
+        return billingZipcode;
+    }
+
+    public void setBillingZipcode(String billingZipcode) {
+        this.billingZipcode = billingZipcode;
     }
 }

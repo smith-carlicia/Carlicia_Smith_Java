@@ -5,11 +5,13 @@ public class Customer {
     private String firstName;
     private String lastName;
 
-    private Address shippingAddress;
-    private Address billingAddress;
+    private Address address;
 
     private String phoneNumber;
     private String email;
+
+
+    private boolean rewardsMember;
 
 
     public String getFirstName() {
@@ -28,20 +30,12 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public Address getShippingAddress() {
-        return shippingAddress;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setShippingAddress(Address shippingAddress) {
-        this.shippingAddress = shippingAddress;
-    }
-
-    public Address getBillingAddress() {
-        return billingAddress;
-    }
-
-    public void setBillingAddress(Address billingAddress) {
-        this.billingAddress = billingAddress;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public String getPhoneNumber() {
@@ -58,5 +52,13 @@ public class Customer {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public boolean getRewardsMember() {
+        return rewardsMember;
+    }
+
+    public void setRewardsMember(boolean rewardsMember) {
+        this.rewardsMember = rewardsMember;
     }
 }
