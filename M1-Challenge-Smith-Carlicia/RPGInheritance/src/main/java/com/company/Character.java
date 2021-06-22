@@ -9,27 +9,48 @@ public class Character {
     private int attackPower;
     private int speed;
 
-   public void run() {
-       System.out.println("The character is running.");
-   }
+    public Character(String name, int strength, int health, int stamina, int attackPower, int speed) {
+        this.name = name;
+        this.strength = strength;
+        this.health = health;
+        this.stamina = stamina;
+        this.attackPower = attackPower;
+        this.speed = speed;
+    }
 
-   public void attack(){
-       System.out.println("The character has now made an attack..");
-   }
 
-   public void heal() {
-       System.out.println("The character is now healing.");
-   }
+    public int run() {
+        speed ++;
+        return speed;
+    }
 
-   public void decreaseHealth() {
-       System.out.println("The character's health has decreased.");
-   }
+    public int attack(){
 
-   public void increaseStamina() {
-       System.out.println("The character's stamina has increased.");
-   }
+        health --;
+        return health;
+    }
 
-   public void decreaseStamina() {
-       System.out.println("The character's stamina has decreased.");
-   }
+    public int heal() {
+
+        health++;
+        return health;
+    }
+
+    public int decreaseHealth() {
+
+        health--;
+        return health--;
+    }
+
+    public int increaseStamina() {
+
+        stamina++;
+        return stamina;
+    }
+
+    public int decreaseStamina() {
+
+        stamina--;
+        return stamina;
+    }
 }
