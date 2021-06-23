@@ -8,7 +8,9 @@ import static org.junit.Assert.*;
 
 public class CalculatorTest {
 
-    CalculatorObject calc = new CalculatorObject();
+
+    private CalculatorObject calc = new CalculatorObject();
+
 
 
 
@@ -63,7 +65,7 @@ public class CalculatorTest {
 
     @Test
     public void returnsSumOfTwoNegativeDoubles() {
-        assertEquals(-2.7, calc.add(-8.5, -5.8);
+        assertEquals(-2.7, calc.add(-8.5, -5.8));
     }
 
     @Test
@@ -82,7 +84,7 @@ public class CalculatorTest {
     }
     @Test
     public void returnsproductOfTwoNegativeDoubles() {
-        assertEquals(21 , calc.multiply(-7,-3));
+        assertEquals(22.72 , calc.multiply(-7.1,-3.2));
     }
 
     @Test
@@ -91,7 +93,7 @@ public class CalculatorTest {
     }
     @Test
     public void returnsQuotientOfTwoNegativeDoubles() {
-        assertEquals(2 , calc.divide(-18,-9));
+        assertEquals(-1.87 , calc.divide(-18.2,-9.7));
     }
 
 }
